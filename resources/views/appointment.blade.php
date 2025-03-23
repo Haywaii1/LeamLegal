@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2 class="text-center mt-4">Book an Appointment</h2>
+    <h2 class="text-center mt-4" style="color: #AD8E00;">Book an Appointment</h2>
     @if(session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -30,7 +30,9 @@
             <label for="message" class="form-label">Message (Optional)</label>
             <textarea id="message" name="message" class="form-control"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+        <button type="submit" class="btn w-100" style="background-color: #AD8E00; color: #fff; border: none;">
+            Book Appointment
+        </button>
     </form>
 </div>
 @endsection

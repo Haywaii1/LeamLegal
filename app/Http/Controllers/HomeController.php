@@ -21,4 +21,10 @@ class HomeController extends Controller
     {
         return view('article');
     }
+
+    public function practice()
+    {
+        return view('privacy');
+    }
+    
 }
