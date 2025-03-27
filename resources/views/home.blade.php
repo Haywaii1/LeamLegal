@@ -8,90 +8,46 @@
             </div>
         @endif
 
-        <!-- Carousel Start -->
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{{ asset('img/carousel-1.jpg') }}" class="d-block w-100" alt="Carousel Image">
-                    <div class="carousel-caption">
-                        <h1 class="animated fadeInLeft">We fight for your justice</h1>
-                        <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                        <a class="btn btn-primary animated fadeInUp" href="{{ url('/appointment') }}"
-                            style="color: #FFFFFF;">Book an appointment</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('img/carousel-2.jpg') }}" class="d-block w-100" alt="Carousel Image">
-                    <div class="carousel-caption">
-                        <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
-                        <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                        <a class="btn btn-primary animated fadeInUp" href="{{ url('/appointment') }}"
-                            style="color: #FFFFFF;">Book an appointment</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('img/carousel-3.jpg') }}" class="d-block w-100" alt="Carousel Image">
-                    <div class="carousel-caption">
-                        <h1 class="animated fadeInLeft">We fight for your privilege</h1>
-                        <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                        <a class="btn btn-primary animated fadeInUp" href="{{ url('/appointment') }}"
-                            style="color: #FFFFFF;">Book an appointment</a>
-                    </div>
-                </div>
-            </div>
-
-            <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <!-- Carousel End -->
-
-        <!-- Top Feature Start-->
-        <div class="feature-top">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="feature-item">
-                            <i class="far fa-check-circle"></i>
-                            <h3>Legal</h3>
-                            <p>Govt Approved</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="feature-item">
-                            <i class="fa fa-user-tie"></i>
-                            <h3>Attorneys</h3>
-                            <p>Expert Attorneys</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="feature-item">
-                            <i class="far fa-thumbs-up"></i>
-                            <h3>Success</h3>
-                            <p>99.99% Case Won</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="feature-item">
-                            <i class="far fa-handshake"></i>
-                            <h3>Support</h3>
-                            <p>Quick Support</p>
-                        </div>
-                    </div>
-                </div>
+<!-- Carousel Start -->
+<div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        {{-- <li data-target="#carousel" data-slide-to="2"></li> --}}
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{ asset('img/home.jpg') }}" class="d-block w-100" alt="Carousel Image">
+            <div class="carousel-caption">
+                <h1 class="animated fadeInLeft">Welcome To Leam Legal Practice</h1>
+                <p class="animated fadeInRight">Your trusted partner for strategic legal solutions. With a client-first approach, we offer expert guidance and dedicated advocacy for businesses, individuals, and organizations.</p>
+                <a class="btn btn-primary animated fadeInUp" href="{{ url('/appointment') }}"
+                    style="color: #FFFFFF;">Book a Consultation</a>
             </div>
         </div>
-        <!-- Top Feature End-->
+        <div class="carousel-item">
+            <img src="{{ asset('img/home2.jpg') }}" class="d-block w-100" alt="Carousel Image">
+            <div class="carousel-caption">
+                <h1 class="animated fadeInLeft">LEAM LEGAL PRACTICE</h1>
+                <p class="animated fadeInRight">Where Expertise, Integrity, and Dedication Drive Our Practice</p>
+                <a class="btn btn-primary animated fadeInUp" href="{{ url('/appointment') }}"
+                    style="color: #FFFFFF;">Book a Consultation</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- Carousel End -->
+
 
         <!-- Newsletter Start -->
         <div class="newsletter py-3 bg-light text-center mb-5">

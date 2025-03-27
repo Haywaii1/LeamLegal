@@ -26,5 +26,10 @@ class HomeController extends Controller
     {
         return view('privacy');
     }
+
+    public function team()
+    {
+        return view('teams.team');
+    }
     
 }

@@ -22,6 +22,10 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    {{-- bootstrap 5 --}}
+
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -50,10 +54,18 @@
                                 <p>Call Us For Free Consultation</p>
                             </div>
                             <div class="social">
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href="https://x.com/LeamLegal?t=7Tct0rKBe-btNLy9CCBmSA&s=09" class="text-white mx-2" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>                                
+                                <a href="https://www.facebook.com/share/1BYyf1zRHZ/" class="text-white mx-2" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>                                
+                                <a href="https://x.com/haywaiii" class="text-white mx-2" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>                                
+                                <a href="https://www.instagram.com/leamlegal?igsh=MXA2azhlM2tvMjJqOQ==" class="text-white mx-2" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>                                
                             </div>
                         </div>
                     </div>
@@ -74,31 +86,46 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
                             <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-                            <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
-                            <a href="{{ url('/blog') }}" class="nav-item nav-link">Blog</a>
-                            <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
-                            <a href="{{ route('practice') }}" class="nav-item nav-link">Privacy Policy</a>
-                            {{-- <a href="{{ route('case-studies') }}" class="nav-item nav-link">Case Studies</a>  --}}
+                            <a href="{{ route('about') }}" class="nav-item nav-link">The Firm</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Practices</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Practice Areas</a>
                                 <div class="dropdown-menu">
-                                    <a href="{{ route('litigation') }}" class="dropdown-item">Litigation & Dispute Resolution</a>
-                                    <a href="{{ route('regulation') }}" class="dropdown-item">Regulatory Compliance & Government Relations</a>
-                                    <a href="{{ route('entertainment') }}" class="dropdown-item">Sports and Entertainment Law</a>
-                                    <a href="{{ route('technology') }}" class="dropdown-item">Technology, Intellectual Property & Data Protection Law</a>
-                                    <a href="{{ route('property') }}" class="dropdown-item">Real Estate & Property Law</a>
-                                    <a href="{{ route('employment') }}" class="dropdown-item">Employment & Labour Law</a>
-                                    <a href="{{ route('finance') }}" class="dropdown-item">Banking, Finance & Investment Law</a>
-                                    <a href="{{ route('energy') }}" class="dropdown-item">Energy, Oil & Gas, and Natural Resources Law</a>
+                                    <a href="{{ route('litigation') }}" class="dropdown-item">Litigation & Dispute
+                                        Resolution</a>
+                                    <a href="{{ route('regulation') }}" class="dropdown-item">Regulatory Compliance &
+                                        Government Relations</a>
+                                    <a href="{{ route('entertainment') }}" class="dropdown-item">Sports and
+                                        Entertainment Law</a>
+                                    <a href="{{ route('technology') }}" class="dropdown-item">Technology, Intellectual
+                                        Property & Data Protection Law</a>
+                                    <a href="{{ route('property') }}" class="dropdown-item">Real Estate & Property
+                                        Law</a>
+                                    <a href="{{ route('employment') }}" class="dropdown-item">Employment & Labour
+                                        Law</a>
+                                    <a href="{{ route('finance') }}" class="dropdown-item">Banking, Finance &
+                                        Investment Law</a>
+                                    <a href="{{ route('energy') }}" class="dropdown-item">Energy, Oil & Gas, and
+                                        Natural Resources Law</a>
                                     <a href="{{ route('criminal') }}" class="dropdown-item">Criminal Defence</a>
-                                    <a href="{{ route('immigration') }}" class="dropdown-item">Immigration Law & Global Mobility</a>
-                                    <a href="{{ route('family') }}" class="dropdown-item">Family Law & Estate Planning</a>
-                                    <a href="{{ route('corporate') }}" class="dropdown-item">Corporate, Commercial & Company Secretarial Services</a>
+                                    <a href="{{ route('immigration') }}" class="dropdown-item">Immigration Law & Global
+                                        Mobility</a>
+                                    <a href="{{ route('family') }}" class="dropdown-item">Family Law & Estate
+                                        Planning</a>
+                                    <a href="{{ route('corporate') }}" class="dropdown-item">Corporate, Commercial &
+                                        Company Secretarial Services</a>
+                                    <a href="{{ route('islamic') }}" class="dropdown-item">Islamic Banking and Finance Law</a>
                                 </div>
                             </div>
+                            <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
+                            <a href="{{ url('/blog') }}" class="nav-item nav-link">News and Resources</a>
+                            <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
+                            {{-- <a href="{{ route('practice') }}" class="nav-item nav-link">Privacy Policy</a> --}}
+                            {{-- <a href="{{ route('case-studies') }}" class="nav-item nav-link">Case Studies</a>  --}}
+                            
+                            
                         </div>
                         <div class="ml-auto">
-                            <a class="btn" href="{{ url('/appointment') }}">Get Appointment</a>
+                            <a class="btn" href="{{ url('/appointment') }}">BOOK A CONSULTATION</a>
                         </div>
                     </div>
                 </nav>
@@ -136,12 +163,20 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-link text-center text-md-left">
                             <h2 class="text-uppercase">Services Areas</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="" class="text-white">Civil Law</a></li>
-                                <li><a href="" class="text-white">Family Law</a></li>
-                                <li><a href="" class="text-white">Business Law</a></li>
-                                <li><a href="" class="text-white">Education Law</a></li>
-                                <li><a href="" class="text-white">Immigration Law</a></li>
+                            <ul>
+                                <li>Banking, Finance & Investment Law</li>
+                                <li>Islamic Banking and Finance Law</li>
+                                <li>Employment & Labour Law</li>
+                                <li>Real Estate & Property Law</li>
+                                <li>Technology, Intellectual Property & Data Protection Law</li>
+                                <li>Sports and Entertainment Law</li>
+                                <li>Regulatory Compliance & Government Relations</li>
+                                <li>Litigation & Dispute Resolution</li>
+                                <li>Corporate, Commercial & Company Secretarial Services</li>
+                                <li>Energy, Oil & Gas, and Natural Resources Law</li>
+                                <li>Family Law & Estate Planning</li>
+                                <li>Criminal Defence</li>
+                                <li>Immigration Law & Global Mobility</li>
                             </ul>
                         </div>
                     </div>
@@ -150,17 +185,21 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-contact text-center text-md-left">
                             <h2 class="text-uppercase">Get In Touch</h2>
-                            <p><i class="fa fa-map-marker-alt mr-2"></i>1st Floor, L.A Ajayi Plaza, No. 99 Obafemi<br />
+                            <p><i class="fa fa-map-marker-alt mr-2"></i>1st Floor, L.A Ajayi Plaza, No. 99
+                                Obafemi<br />
                                 Awolowo Way, Ikeja, Lagos. Nigeria</p>
                             <p><i class="fa fa-phone-alt mr-2"></i>+234 802 571 3831</p>
                             <p><i class="fa fa-envelope mr-2"></i>contact@leamlegal.com</p>
                             <div class="footer-social mt-3">
-                                <a href="" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                                <a href="https://x.com/haywaiii" class="text-white mx-2" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
                                 <a href="" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
                                 <a href="" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
                                 <a href="" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
                                 <a href="" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -170,7 +209,7 @@
                     <div class="col-12 text-center">
                         <div class="footer-menu">
                             <a href="" class="text-white mx-2">Terms of Use</a>
-                            <a href="" class="text-white mx-2">Privacy Policy</a>
+                            <a href="{{ route('practice') }}" class="nav-item nav-link">Privacy Policy</a>
                             <a href="" class="text-white mx-2">Cookies</a>
                             <a href="" class="text-white mx-2">Help</a>
                             <a href="" class="text-white mx-2">FAQs</a>
@@ -193,6 +232,26 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('.dropdown-menu a').click(function() {
+                    $('.navbar .show').removeClass('show'); // Closes any open dropdown
+                });
+            });
+        </script>
+
+        {{-- this is for the corousel on the homepage --}}
+
+        <script>
+            $(document).ready(function() {
+                $('#carousel').carousel();
+            });
+        </script>
+
+
+        {{-- bootstrap 5 js --}}
+        {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> --}}
 
 </body>
 

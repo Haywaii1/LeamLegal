@@ -58,4 +58,8 @@ class PracticeController extends Controller
     public function regulation() {
         return view('practices.regulation');
     }
+
+    public function islamic() {
+        return view('practices.islamic');
+    }
 }

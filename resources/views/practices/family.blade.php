@@ -3,6 +3,11 @@
 @section('content')
     <div>
         <div>
+            <!-- Image Section -->
+            <div class="col-md-5">
+             <img src="{{ asset('img/family.jpg') }}" alt="Corporate Services" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+         </div>
+        <div>
             <h3 style="color: #AD8E00;">Family Law & Estate Planning</h3>
             <p>We handle sensitive family and estate matters with professionalism and discretion, providing tailored
                 solutions that protect our clients' personal and financial interests</p>
