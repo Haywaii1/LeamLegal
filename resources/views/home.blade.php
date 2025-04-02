@@ -24,7 +24,7 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{ asset('img/home.jpg') }}" class="d-block w-100" alt="Carousel Image">
+            <img src="{{ asset('img/home2.jpg') }}" class="d-block w-100" alt="Carousel Image">
             <div class="carousel-caption">
                 <h1 class="animated fadeInLeft">WELCOME TO </h1>
                 <h1 class="animated fadeInLeft">LEAM LEGAL PRACTICE</h1>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('img/home2.jpg') }}" class="d-block w-100" alt="Carousel Image">
+            <img src="{{ asset('img/home.jpg') }}" class="d-block w-100" alt="Carousel Image">
             <div class="carousel-caption">
                 <h1 class="animated fadeInLeft">WELCOME TO </h1>
                 <h1 class="animated fadeInLeft">LEAM LEGAL PRACTICE</h1>

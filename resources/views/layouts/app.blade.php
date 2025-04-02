@@ -61,7 +61,7 @@
                                     target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="https://x.com/haywaiii" class="text-white mx-2" target="_blank">
+                                <a href="https://www.linkedin.com/company/leam-legal/" class="text-white mx-2" target="_blank">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                                 <a href="https://www.instagram.com/leamlegal?igsh=MXA2azhlM2tvMjJqOQ=="
@@ -109,7 +109,7 @@
                                         Investment Law</a>
                                     <a href="{{ route('energy') }}" class="dropdown-item">Energy, Oil & Gas, and
                                         Natural Resources Law</a>
-                                    <a href="{{ route('criminal') }}" class="dropdown-item">Criminal Defence</a>
+                                    {{-- <a href="{{ route('criminal') }}" class="dropdown-item">Criminal Defence</a> --}}
                                     <a href="{{ route('immigration') }}" class="dropdown-item">Immigration Law & Global
                                         Mobility</a>
                                     <a href="{{ route('family') }}" class="dropdown-item">Family Law & Estate
@@ -187,7 +187,6 @@
                                 <li>Corporate, Commercial & Company Secretarial Services</li>
                                 <li>Energy, Oil & Gas, and Natural Resources Law</li>
                                 <li>Family Law & Estate Planning</li>
-                                <li>Criminal Defence</li>
                                 <li>Immigration Law & Global Mobility</li>
                             </ul>
                         </div>
@@ -216,7 +215,7 @@
                                         target="_blank">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://x.com/haywaiii" class="text-white mx-2" target="_blank">
+                                    <a href="https://www.linkedin.com/company/leam-legal/" class="text-white mx-2" target="_blank">
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                     <a href="https://www.instagram.com/leamlegal?igsh=MXA2azhlM2tvMjJqOQ=="

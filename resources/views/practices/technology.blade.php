@@ -5,13 +5,13 @@
         <div class="row align-items-center">
             <!-- Image Section -->
             <div class="col-md-5">
-                <img src="{{ asset('img/technology.jpg') }}" alt="Corporate Services" 
+                <img src="{{ asset('img/technology.jpg') }}" alt="Corporate Services"
                      class="img-fluid rounded shadow-lg" style="max-width: 100%; height: auto;">
             </div>
 
             <!-- Text Section -->
             <div class="col-md-7">
-                <h2 style="color: #AD8E00;">Technology Law</h2>
+                <h2 style="color: #AD8E00;">Technology, Intellectual Property & Data Protection Law</h2>
                 <p>
                     In today’s digital economy, businesses must navigate complex legal landscapes in technology, data protection,
                     and intellectual property. At Leam Legal Practice, we provide comprehensive legal services to safeguard
