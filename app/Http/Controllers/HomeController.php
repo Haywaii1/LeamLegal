@@ -31,5 +31,10 @@ class HomeController extends Controller
     {
         return view('teams.team');
     }
-    
+    public function prac()
+    {
+        return view('teams.team');
+    }
+
+
 }

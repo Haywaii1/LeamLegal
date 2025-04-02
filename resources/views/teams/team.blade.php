@@ -11,9 +11,9 @@
             <div class="row">
                 @php
                     $teamMembers = [
-                                ['name' => 'Luqman Eyinade', 'role' => 'Lead Partner', 'image' => 'img/bimbo.jpg', 'profile' => url('/profile/luqman')],
-                                ['name' => 'Morisola Akinlabi', 'role' => 'Partner', 'image' => 'img/moji.jpg', 'profile' => url('/profile/morisola')],
-                                ['name' => 'Waliu Bello', 'role' => 'Partner', 'image' => 'img/waliu.jpg', 'profile' => url('/profile/waliu')],
+                                ['name' => 'Luqman Abimbola Eyinade', 'role' => 'Lead Partner', 'image' => 'img/bimbo.jpg', 'profile' => url('/profile/luqman')],
+                                ['name' => 'Morisola Alaba Akinlabi', 'role' => 'Partner', 'image' => 'img/moji.jpg', 'profile' => url('/profile/morisola')],
+                                ['name' => 'Waliu Abiodun Bello', 'role' => 'Partner', 'image' => 'img/waliu.jpg', 'profile' => url('/profile/waliu')],
                                 ['name' => 'Ridwan Sharomi', 'role' => 'Associate', 'image' => 'img/ridwan.jpg', 'profile' => url('/profile/ridwan')],
                                 ['name' => 'Aliyu Akinwunmi Akano', 'role' => 'Associate', 'image' => 'img/aliyu.jpg', 'profile' => url('/profile/aliyu')]
                             ];

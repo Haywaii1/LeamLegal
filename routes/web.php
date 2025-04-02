@@ -44,11 +44,12 @@ Route::post('/appointment', [AppointmentController::class, 'store'])->name('appo
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.show');
-Route::get('/blog/add', [BlogController::class, 'create'])->name('blog.add');
 
 
 
-Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create')->middleware([]);
+Route::get('/add', [BlogController::class, 'create'])->name('blog.create');
+
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
 Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
 
 
@@ -63,6 +64,13 @@ Route::post('/logout', [UserController::class, 'logout'])->name(name: 'logout');
 
 Route::get('/register', [UserController::class, 'showRegisterForm'])->name('register');
 Route::post('/register', [UserController::class, 'register']);
+
+
+Route::get('/test', function () {
+    return "Test Route Works!";
+});
+
+
 
 
 

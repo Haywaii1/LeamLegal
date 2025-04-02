@@ -14,12 +14,19 @@ class BlogController extends Controller
         return view('blog.create');
     }
 
+
+
+    public function add()
+    {
+        return view('blog.create');
+    }
+
     public function store(Request $request)
 {
     $request->validate([
         'title' => 'required|string|max:255',
         'category' => 'required|string|max:100',
-        'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:5120', // 5MB limit
         'content' => 'required|string',
         'published_at' => 'required|date',
     ]);

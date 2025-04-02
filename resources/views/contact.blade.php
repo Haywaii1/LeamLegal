@@ -9,14 +9,8 @@
 @endif
 
 <!-- Page Header Start -->
-<div class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Contact Us</h2>
-            </div>
-        </div>
-    </div>
+<div class="section-header">
+    <h2 style="color: #AD8E00;">Contact Us</h2>
 </div>
 <!-- Page Header End -->
 
@@ -38,7 +32,7 @@
                         <i class="fa fa-phone-alt fa-2x mr-3" style="color: #AD8E00;"></i>
                         <div>
                             <h4 class="mb-1">Phone</h4>
-                            <p>+234 816 945 2357 <br> +234 802 571 3831</p>
+                            <p>+234 802 571 3831</p>
                         </div>
                     </div>
                     <div class="contact-item d-flex align-items-center">
@@ -49,13 +43,22 @@
                             <p>contact@leamlegal.com</p>
                         </div>
                     </div>
+                    <div class="contact-item d-flex align-items-center">
+                        <i class="fab fa-whatsapp fa-2x mr-3" style="color: #AD8E00;"></i>
+                        <div>
+                            <h4 class="mb-1">WhatsApp</h4>
+                            <p>+234 802 571 3831</p> 
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
             <!-- Contact Form -->
             <div class="col-md-6">
                 <div class="p-4 bg-light rounded shadow">
-                    <h4 class="text-center mb-4" style="color: #AD8E00;">Send Us a Message</h4>
+                    <h4 class="text-center mb-4" style="color: #AD8E00;">Contact Us</h4>
                     <form action="{{ route('contact.send') }}" method="POST">
                         @csrf
                         <div class="form-group">

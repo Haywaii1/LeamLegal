@@ -11,6 +11,9 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
     <!-- Google Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap"
@@ -21,10 +24,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    {{-- bootstrap 5 --}}
-
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -46,26 +45,29 @@
                     <div class="col-lg-9">
                         <div class="top-bar-right">
                             <div class="text">
-                                <h2>8:00 - 9:00</h2>
+                                <h2>9:00am - 5:00pm</h2>
                                 <p>Opening Hour Mon - Fri</p>
                             </div>
                             <div class="text">
                                 <h2>+234 802 571 3831</h2>
-                                <p>Call Us For Free Consultation</p>
+                                <p>Call Us For Consultation</p>
                             </div>
                             <div class="social">
-                                <a href="https://x.com/LeamLegal?t=7Tct0rKBe-btNLy9CCBmSA&s=09" class="text-white mx-2" target="_blank">
+                                <a href="https://x.com/LeamLegal?t=7Tct0rKBe-btNLy9CCBmSA&s=09" class="text-white mx-2"
+                                    target="_blank">
                                     <i class="fab fa-twitter"></i>
-                                </a>                                
-                                <a href="https://www.facebook.com/share/1BYyf1zRHZ/" class="text-white mx-2" target="_blank">
+                                </a>
+                                <a href="https://www.facebook.com/share/1BYyf1zRHZ/" class="text-white mx-2"
+                                    target="_blank">
                                     <i class="fab fa-facebook-f"></i>
-                                </a>                                
+                                </a>
                                 <a href="https://x.com/haywaiii" class="text-white mx-2" target="_blank">
                                     <i class="fab fa-linkedin-in"></i>
-                                </a>                                
-                                <a href="https://www.instagram.com/leamlegal?igsh=MXA2azhlM2tvMjJqOQ==" class="text-white mx-2" target="_blank">
+                                </a>
+                                <a href="https://www.instagram.com/leamlegal?igsh=MXA2azhlM2tvMjJqOQ=="
+                                    class="text-white mx-2" target="_blank">
                                     <i class="fab fa-instagram"></i>
-                                </a>                                
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +80,7 @@
         <div class="nav-bar">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                    <a href="#" class="navbar-brand">MENU</a>
+
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -88,7 +90,8 @@
                             <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
                             <a href="{{ route('about') }}" class="nav-item nav-link">The Firm</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Practice Areas</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Practice
+                                    Areas</a>
                                 <div class="dropdown-menu">
                                     <a href="{{ route('litigation') }}" class="dropdown-item">Litigation & Dispute
                                         Resolution</a>
@@ -113,7 +116,8 @@
                                         Planning</a>
                                     <a href="{{ route('corporate') }}" class="dropdown-item">Corporate, Commercial &
                                         Company Secretarial Services</a>
-                                    <a href="{{ route('islamic') }}" class="dropdown-item">Islamic Banking and Finance Law</a>
+                                    <a href="{{ route('islamic') }}" class="dropdown-item">Islamic Banking and Finance
+                                        Law</a>
                                 </div>
                             </div>
                             <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
@@ -121,8 +125,8 @@
                             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
                             {{-- <a href="{{ route('practice') }}" class="nav-item nav-link">Privacy Policy</a> --}}
                             {{-- <a href="{{ route('case-studies') }}" class="nav-item nav-link">Case Studies</a>  --}}
-                            
-                            
+
+
                         </div>
                         <div class="ml-auto">
                             <a class="btn" href="{{ url('/appointment') }}">BOOK A CONSULTATION</a>
@@ -133,6 +137,14 @@
         </div>
         <!-- Nav Bar End -->
         <div class="container mt-4">
+            <div>
+                <!-- Floating WhatsApp Button -->
+                <a href="https://wa.me/2348025713831" class="whatsapp-float" target="_blank">
+                    <i class="fab fa-whatsapp whatsapp-icon"></i>
+                </a>
+
+            </div>
+
             {{-- This is where the content from other views will be injected --}}
             @yield('content')
         </div>
@@ -162,7 +174,7 @@
                     <!-- Services Section -->
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-link text-center text-md-left">
-                            <h2 class="text-uppercase">Services Areas</h2>
+                            <h2 class="text-uppercase">Practice Areas</h2>
                             <ul>
                                 <li>Banking, Finance & Investment Law</li>
                                 <li>Islamic Banking and Finance Law</li>
@@ -184,22 +196,34 @@
                     <!-- Contact Section -->
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-contact text-center text-md-left">
-                            <h2 class="text-uppercase">Get In Touch</h2>
+                            <h2 class="text-uppercase">Contact Us</h2>
                             <p><i class="fa fa-map-marker-alt mr-2"></i>1st Floor, L.A Ajayi Plaza, No. 99
                                 Obafemi<br />
                                 Awolowo Way, Ikeja, Lagos. Nigeria</p>
                             <p><i class="fa fa-phone-alt mr-2"></i>+234 802 571 3831</p>
                             <p><i class="fa fa-envelope mr-2"></i>contact@leamlegal.com</p>
-                            <div class="footer-social mt-3">
-                                <a href="https://x.com/haywaiii" class="text-white mx-2" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
-                                <a href="" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-                                <a href="" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            
+                            <p><i class="fa-brands fa-whatsapp fa-solid mr-2"></i>+234 802
+                                571
+                                3831</p>
+
+
+                                <div class="social">
+                                    <a href="https://x.com/LeamLegal?t=7Tct0rKBe-btNLy9CCBmSA&s=09" class="text-white mx-2"
+                                        target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/share/1BYyf1zRHZ/" class="text-white mx-2"
+                                        target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://x.com/haywaiii" class="text-white mx-2" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/leamlegal?igsh=MXA2azhlM2tvMjJqOQ=="
+                                        class="text-white mx-2" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -210,11 +234,8 @@
                         <div class="footer-menu">
                             <a href="" class="text-white mx-2">Terms of Use</a>
                             <a href="{{ route('practice') }}" class="nav-item nav-link">Privacy Policy</a>
-                            <a href="" class="text-white mx-2">Cookies</a>
-                            <a href="" class="text-white mx-2">Help</a>
-                            <a href="" class="text-white mx-2">FAQs</a>
                         </div>
-                        <p class="mt-3 mb-0">&copy; 2025 LeamLegal. All Rights Reserved.</p>
+                        <p class="mt-3 mb-0">&copy; 2025 LeamLegal. All Rights Reserved.(Designed by HayWare Tech)</p>
                     </div>
                 </div>
             </div>
@@ -248,11 +269,6 @@
                 $('#carousel').carousel();
             });
         </script>
-
-
-        {{-- bootstrap 5 js --}}
-        {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> --}}
-
 </body>
 
 </html>

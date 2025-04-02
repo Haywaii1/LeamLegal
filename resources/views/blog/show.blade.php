@@ -22,59 +22,32 @@
 
     <!-- Custom Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <style>
+        .text-highlight { color: #AD8E00 !important; }
+        .btn-highlight { border-color: #AD8E00 !important; color: #AD8E00 !important; }
+        .btn-highlight:hover { background-color: #AD8E00 !important; color: #fff !important; }
+    </style>
 </head>
 
 <body>
-
     <!-- Nav Bar Start -->
     <div class="nav-bar">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a href="{{ route('home') }}" class="navbar-brand">LEAM LEGAL</a>
+                <a href="{{ route('home') }}" class="navbar-brand text-highlight">LEAM LEGAL</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="{{ route('home') }}" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('about') }}" class="nav-link">The Firm</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Practice Areas</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ route('litigation') }}" class="dropdown-item">Litigation & Dispute Resolution</a></li>
-                                <li><a href="{{ route('regulation') }}" class="dropdown-item">Regulatory Compliance & Government Relations</a></li>
-                                <li><a href="{{ route('entertainment') }}" class="dropdown-item">Sports & Entertainment Law</a></li>
-                                <li><a href="{{ route('technology') }}" class="dropdown-item">Technology, Intellectual Property & Data Protection</a></li>
-                                <li><a href="{{ route('property') }}" class="dropdown-item">Real Estate & Property Law</a></li>
-                                <li><a href="{{ route('employment') }}" class="dropdown-item">Employment & Labour Law</a></li>
-                                <li><a href="{{ route('finance') }}" class="dropdown-item">Banking, Finance & Investment Law</a></li>
-                                <li><a href="{{ route('energy') }}" class="dropdown-item">Energy, Oil & Gas, and Natural Resources Law</a></li>
-                                <li><a href="{{ route('criminal') }}" class="dropdown-item">Criminal Defence</a></li>
-                                <li><a href="{{ route('immigration') }}" class="dropdown-item">Immigration Law & Global Mobility</a></li>
-                                <li><a href="{{ route('family') }}" class="dropdown-item">Family Law & Estate Planning</a></li>
-                                <li><a href="{{ route('corporate') }}" class="dropdown-item">Corporate, Commercial & Company Secretarial Services</a></li>
-                                <li><a href="{{ route('islamic') }}" class="dropdown-item">Islamic Banking and Finance Law</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('team') }}" class="nav-link">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('/blog') }}" class="nav-link">News & Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('contact') }}" class="nav-link">Contact</a>
-                        </li>
+                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link text-highlight">Home</a></li>
+                        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">The Firm</a></li>
+                        <li class="nav-item"><a href="{{ route('team') }}" class="nav-link">Team</a></li>
+                        <li class="nav-item"><a href="{{ url('/blog') }}" class="nav-link">News & Resources</a></li>
+                        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                     </ul>
                     <div class="ml-auto">
-                        <a href="{{ url('/appointment') }}" class="btn btn-outline-warning btn-lg">
-                            BOOK A CONSULTATION
-                        </a>
+                        <a href="{{ url('/appointment') }}" class="btn btn-highlight btn-lg">BOOK A CONSULTATION</a>
                     </div>
                 </div>
             </nav>
@@ -82,35 +55,41 @@
     </div>
     <!-- Nav Bar End -->
 
-
-
-    <div class="container">
-        <h1>{{ $blog->title }}</h1>
-        <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}" class="img-fluid">
-        <p><strong>Category:</strong> {{ $blog->category }}</p>
-        <p><strong>Published On:</strong> {{ \Carbon\Carbon::parse($blog->published_at)->format('d-M-Y') }}</p>
-        <p>{{ $blog->content }}</p>
-        <a href="{{ route('blog.index') }}" class="btn btn-primary">Back to Blog</a>
-    </div>
-
-
-
-
-
-
-
-{{-- <div class="container">
-    <div class="blog-detail">
-        <h2>{{ $blog->title }}</h2>
-        <div class="meta">
-            <i class="fa fa-list-alt"></i> <a href="#">{{ $blog->category }}</a>
-            <i class="fa fa-calendar-alt"></i> <p>{{ $blog->published_at->format('d-M-Y') }}</p>
+    <!-- Content Section -->
+    <div class="container my-5">
+        <!-- Team Member Details -->
+        @if(isset($member))
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img src="{{ asset($member['image']) }}" alt="{{ $member['name'] }}" class="img-fluid rounded shadow-sm" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+            <div class="col-lg-8">
+                <h1 class="text-highlight">{{ $member['name'] }}</h1>
+                <p class="fw-bold">{{ $member['role'] }}</p>
+                <p class="text-justify fs-5">{!! $member['bio'] !!}</p>
+                <a href="{{ url('/team') }}" class="btn btn-highlight">&larr; Back to Team</a>
+            </div>
         </div>
-        <img src="{{ asset($blog->image) }}" alt="Blog">
-        <p>{{ $blog->content }}</p>
+        @endif
+
+        <!-- Blog Post Details -->
+        @if(isset($blog))
+        <div>
+            <h1 class="text-highlight">{{ $blog->title }}</h1>
+            <div class="text-center my-3">
+                <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}" class="img-fluid rounded" style="width: 100%; max-width: 600px; height: auto; object-fit: cover;">
+            </div>
+            <p><strong>Category:</strong> {{ $blog->category }}</p>
+            <p><strong>Published On:</strong> {{ \Carbon\Carbon::parse($blog->published_at)->format('d-M-Y') }}</p>
+            <p class="text-justify fs-5">{{ $blog->content }}</p>
+            <a href="{{ route('blog.index') }}" class="btn btn-highlight">&larr; Back to News</a>
+        </div>
+        @endif
     </div>
-</div> --}}
+    <!-- Content Section End -->
 
-
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
